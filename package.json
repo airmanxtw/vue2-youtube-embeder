@@ -1,10 +1,22 @@
 {
   "name": "vue2-youtube-embeder",
-  "version": "0.1.0",
-  "private": true,
+  "main":"dist/vue2-youtube-embeder.common.js",
+  "version": "0.1.0",  
+  "keywords": [
+    "vue",
+    "youtube",
+    "embed"
+  ],
+  "author": "airmanx",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airmanxtw/vue2-youtube-embeder"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --open --host localhost",
+    "build": "vue-cli-service build --target lib --name vue2-youtube-embeder ./src/components/index.js",
+    "doc": "vue-cli-service build ./src/main.js --dest docs --mode development",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
