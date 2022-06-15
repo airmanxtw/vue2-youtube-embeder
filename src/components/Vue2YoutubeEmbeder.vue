@@ -1,5 +1,5 @@
 <template>
-  <div :class="fillMode ? 'videoWrapper':''">
+  <div :class="fillMode ? 'videoWrapper' : ''">
     <iframe
       ref="videoIframe"
       :width="width"
@@ -11,13 +11,23 @@
       :allowfullscreen="allowfullscreen"
       :style="{ top: iframeTop }"
     ></iframe>
-    <div v-if="fillMode"
+    <div
+      v-if="fillMode"
       class="foreground-text textStyle"
       :style="{ top: titleTop }"
     >
       <div v-if="!!title">{{ title }}</div>
       <div v-if="allowfullscreen">
-        <button @click="fullscreen">Full Screen</button>
+        <slot
+          name="button"
+          v-bind="{
+            click: () => {
+              fullscreen();
+            },
+          }"
+        >
+          <button @click="fullscreen">Full Screen</button>
+        </slot>
       </div>
     </div>
   </div>
@@ -66,10 +76,10 @@ export default {
       type: String,
       default: "5%",
     },
-    fillMode:{
-      type:Boolean,
-      default:true
-    }
+    fillMode: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
@@ -130,9 +140,9 @@ export default {
   width: 100%;
 }
 
-.textStyle{
-    text-align: left;
-    font-size: x-large;
-    color:white;
+.textStyle {
+  text-align: left;
+  font-size: x-large;
+  color: white;
 }
 </style>
