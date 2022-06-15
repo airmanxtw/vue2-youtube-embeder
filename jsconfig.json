@@ -8,30 +8,30 @@
       "@/*": [
         "src/*"
       ]
-    },
-    "include": [
-      "./src/**/*",
-      "./tests/**/*",
-    ],
-    "exclude": [
-      "dist",
-      "node_modules",
-      "build",
-      ".vscode",
-      ".nuxt",
-      "coverage",
-      "jspm_packages",
-      "tmp",
-      "temp",
-      "bower_components",
-      ".npm",
-      ".yarn"
-    ],
+    },    
     "lib": [
       "esnext",
       "dom",
       "dom.iterable",
       "scripthost"
     ]
-  }
+  },
+  "include": [
+    "./src/**/*",
+    "./tests/**/*",
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "build",
+    ".vscode",
+    ".nuxt",
+    "coverage",
+    "jspm_packages",
+    "tmp",
+    "temp",
+    "bower_components",
+    ".npm",
+    ".yarn"
+  ],
 }
