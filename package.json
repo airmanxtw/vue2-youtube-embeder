@@ -17,6 +17,7 @@
     "serve": "vue-cli-service serve --open --host localhost",
     "build": "vue-cli-service build --target lib --name vue2-youtube-embeder ./src/components/index.js",
     "doc": "vue-cli-service build ./src/main.js --dest docs --mode development",
+    "docp": "vue-cli-service build ./src/main.js --dest docs --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
