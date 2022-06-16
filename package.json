@@ -1,7 +1,7 @@
 {
   "name": "vue2-youtube-embeder",
   "main": "dist/vue2-youtube-embeder.common.js",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "keywords": [
     "vue",
     "youtube",

@@ -115,7 +115,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
