@@ -4,6 +4,7 @@
 
 ## Usage
 ```javascript
+//src/main.js
 import vue2YoutubeEmbeder from 'vue2-youtube-embeder';
 import 'vue2-youtube-embeder/dist/vue2-youtube-embeder.css';
 Vue.use(vue2YoutubeEmbeder);
