@@ -2,6 +2,13 @@
 
 [demo](https://airmanxtw.github.io/vue2-youtube-embeder/)
 
+## Usage
+```javascript
+import vue2YoutubeEmbeder from 'vue2-youtube-embeder';
+import 'vue2-youtube-embeder/dist/vue2-youtube-embeder.css';
+Vue.use(vue2YoutubeEmbeder);
+```
+
 ## example 1
 ```html
 <div
