@@ -26,19 +26,7 @@
     </div>
     <hr style="margin-top:500px" />
     <h1>example 3</h1>
-    <div class="videoContainer">
-      <vue2-youtube-embeder
-        src="https://www.youtube.com/embed/dRVkQsZFISU"
-        title="鳥的故事2"
-        autoplay
-        loop
-        width="50%"        
-      >
-        <template v-slot:button="event">
-          <button v-on="event">全螢幕撥放</button>
-        </template>
-      </vue2-youtube-embeder>
-    </div>
+    <iframe src="https://www.youtube.com/embed/dRVkQsZFISU?autoplay=1&mute=1" width="500px" loading="lazy"></iframe>
 
   </div>
 </template>
