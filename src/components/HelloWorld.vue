@@ -26,7 +26,7 @@
     </div>
     <hr style="margin-top:500px" />
     <h1>example 3</h1>
-    <iframe src="https://www.youtube.com/embed/dRVkQsZFISU?autoplay=1&mute=1" width="500px" loading="lazy"></iframe>
+    <img src="https://images1.epochhk.com/pictures/132713/120210220929100445@1200x1200.jpg" loading="lazy">
 
   </div>
 </template>
