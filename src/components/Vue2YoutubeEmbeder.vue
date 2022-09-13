@@ -9,7 +9,7 @@
       frameborder="0"
       :allow="allow"
       :allowfullscreen="allowfullscreen"
-      :style="{ top: iframeTop }"
+      :style="{ top: iframeTop }"          
     ></iframe>
     <div
       v-if="fillMode"
